@@ -37,7 +37,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  
+
 end
 
 def all_winter_holiday_supplies(holiday_hash)
@@ -53,7 +53,13 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
+  holiday_hash.each_with_index do |x, index|
+    puts "#{x.keys[index]}:"
+    x.each do |y|
+      puts y
+    end
+  end
+      
 end
 
 def all_holidays_with_bbq(holiday_hash)
