@@ -27,10 +27,10 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each_key do |key|
+  holiday_hash.each do |key,value|
     puts "#{key.to_s.capitalize}:"
-    holiday_hash[key].each_key do |ke|
-      values = holiday_hash[key][ke].join(", ")
+    value.each do |ke, val|
+      values = val[ke].join(", ")
       hol = ke.to_s.split("_")
       hol.each {|x| x.capitalize!}
       holiday = hol.join(" ")
@@ -43,8 +43,9 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
   newarray=[]
+  holiday_hash[]
   holiday_hash.collect do |x|
-    if x.values.include?("BBQ")
+    if 
       newarray x.key
     end
   end
