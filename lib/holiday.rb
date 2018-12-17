@@ -47,6 +47,7 @@ def all_holidays_with_bbq(holiday_hash)
     if x.values.include?("BBQ")
       newarray x.key
     end
+  end
 end
 
 # given that holiday_hash looks like this:
