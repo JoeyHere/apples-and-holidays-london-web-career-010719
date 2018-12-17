@@ -33,7 +33,7 @@ def all_supplies_in_holidays(holiday_hash)
       values = holiday_hash[key][ke].join(", ")
       hol = ke.to_s.split("_")
       hol.each {|x| x.capitalize!}
-      holiday = array.join(" ")
+      holiday = hol.join(" ")
       puts "  #{holiday}: #{values}"
     end
   end
