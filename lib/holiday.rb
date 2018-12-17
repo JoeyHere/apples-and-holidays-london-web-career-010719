@@ -43,10 +43,10 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
   newarray=[]
-  holiday_hash.each do |x|
-    x.each do |key|
-      if x[key].values.include("BBQ")
-        newarray << key
+  holiday_hash.each_key do |key|
+    holiday_hash[key].each_key do |ke|
+      if x[ke].values.include("BBQ")
+        newarray << ke
       end
     end
   end
