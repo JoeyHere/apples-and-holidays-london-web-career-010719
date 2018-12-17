@@ -46,7 +46,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each_key do |key|
     holiday_hash[key].each_key do |ke|
       if holiday_hash[key][ke].include?("BBQ")
-        newarray << key
+        newarray << ke
       end
     end
   end
